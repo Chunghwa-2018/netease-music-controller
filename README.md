@@ -1,6 +1,6 @@
 # 网易云音乐 alfred workflow
 
-** 版本支持
+** 版本支持 **
 
 neteasemusic controller version: 0.1v
 
@@ -16,10 +16,10 @@ neteasemusic version: 2.3.8 [872]
 
 ## 操作指令
 
-** '{keyword} {query}'
-** 'n {query}'
+** '{keyword} {query}' **
+** 'n {query}' **
 
-** 'np'			播放 / 暂停
+** 'np'			播放 / 暂停 **
 
 #### 更多
 
@@ -41,6 +41,6 @@ neteasemusic version: 2.3.8 [872]
 |  c   |     close      |    关闭窗口     |
 |  qu  |      quit      |      退出       |
 
-** 说明：
+** 说明： **
 
 考虑到和 QQmusic 的  workflow 的退出指令可能混淆 Alfred，进而为了保持和网易云音乐的 workflow 同步，故采用 “qu”。
