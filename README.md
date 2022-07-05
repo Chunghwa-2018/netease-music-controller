@@ -1,6 +1,6 @@
 # 网易云音乐 alfred workflow
 
-** 版本支持 **
+**版本支持**
 
 neteasemusic controller version: 0.1v
 
@@ -10,16 +10,16 @@ neteasemusic version: 2.3.8 [872]
 
 ## 演示
 
-![image-20220705200313337](/Users/zhaohongliang/Library/Application Support/typora-user-images/image-20220705200313337.png)
-
-![image-20220705200125682](/Users/zhaohongliang/Library/Application Support/typora-user-images/image-20220705200125682.png)
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/29922837/177329666-75ca5746-f545-409c-9f66-44bcb9439405.png">
+<img width="685" alt="image" src="https://user-images.githubusercontent.com/29922837/177329698-d0deecb1-7bd7-4d66-bedb-a1faf0e67bd5.png">
 
 ## 操作指令
 
-** '{keyword} {query}' **
-** 'n {query}' **
+**'{keyword} {query}'**
 
-** 'np'			播放 / 暂停 **
+**'n {query}'**
+
+**'np'			播放 / 暂停**
 
 #### 更多
 
@@ -41,6 +41,6 @@ neteasemusic version: 2.3.8 [872]
 |  c   |     close      |    关闭窗口     |
 |  qu  |      quit      |      退出       |
 
-** 说明： **
+**说明：**
 
 考虑到和 QQmusic 的  workflow 的退出指令可能混淆 Alfred，进而为了保持和网易云音乐的 workflow 同步，故采用 “qu”。
