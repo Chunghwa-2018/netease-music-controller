@@ -19,6 +19,7 @@ set PLAY_ALL		to "0"
 set PLAY_REPET_ONE	to "1"
 set PLAY_REPET_ALL	to "2"
 set PLAY_RANDOM		to "9"
+set PLAY_HEART_BEAT to "8"
 set LYRIC_SHOW_HIDE	to "ly"
 set WINDOWS_HIDE	to "h"
 set WINDOWS_CLOSE	to "c"
@@ -67,9 +68,13 @@ else if query is equal to PLAY_RANDOM
 	tell application "System Events" to tell process APP_NAME
 		click menu item 8 of menu 1 of menu bar item 4 of menu bar 1
 	end tell
+else if query is equal to PLAY_HEART_BEAT
+    tell application "System Events" to tell process APP_NAME
+        click menu item 9 of menu 1 of menu bar item 4 of menu bar 1
+    end tell
 else if query is equal to LYRIC_SHOW_HIDE
 	tell application "System Events" to tell process APP_NAME
-		click menu item 9 of menu 1 of menu bar item 4 of menu bar 1
+		click menu item 10 of menu 1 of menu bar item 4 of menu bar 1
 	end tell
 else if query is equal to WINDOWS_HIDE
 	tell application "System Events" to tell process APP_NAME
