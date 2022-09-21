@@ -27,65 +27,36 @@ set QUIT_ 			to "qu"
 
 set NOTIFICATION_TITLE to "网易云音乐"
 
-
-if query is equal to PLAY_PAUSE then
-	tell application "System Events" to tell process APP_NAME
+tell application "System Events" to tell process APP_NAME
+	if query is equal to PLAY_PAUSE then
 		click menu item 1 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to NEXT then
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to NEXT then
 		click menu item 2 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to PREVIOUS then
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to PREVIOUS then
 		click menu item 3 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to VOLUME_UP then
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to VOLUME_UP then
 		click menu item 4 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to VOLUME_DOWN
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to VOLUME_DOWN then 
 		click menu item 5 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to LIKE
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to LIKE then
 		click menu item 6 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to PLAY_ALL
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to PLAY_ALL then
 		click menu item 1 of menu of menu item 7 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to PLAY_REPET_ONE
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to PLAY_REPET_ONE then
 		click menu item 2 of menu of menu item 7 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to PLAY_REPET_ALL
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to PLAY_REPET_ALL then
 		click menu item 3 of menu of menu item 7 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to PLAY_RANDOM
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to PLAY_RANDOM then
 		click menu item 8 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to PLAY_HEART_BEAT
-    tell application "System Events" to tell process APP_NAME
-        click menu item 9 of menu 1 of menu bar item 4 of menu bar 1
-    end tell
-else if query is equal to LYRIC_SHOW_HIDE
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to PLAY_HEART_BEAT then
+		click menu item 9 of menu 1 of menu bar item 4 of menu bar 1
+	else if query is equal to LYRIC_SHOW_HIDE then 
 		click menu item 10 of menu 1 of menu bar item 4 of menu bar 1
-	end tell
-else if query is equal to WINDOWS_HIDE
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to WINDOWS_HIDE then 
 		click menu item 1 of menu 1 of menu bar item 5 of menu bar 1
-	end tell
-else if query is equal to WINDOWS_CLOSE
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to WINDOWS_CLOSE then
 		click menu item 7 of menu 1 of menu bar item 2 of menu bar 1
-	end tell
-else if query is equal to QUIT_
-	tell application "System Events" to tell process APP_NAME
+	else if query is equal to QUIT_ then 
 		click menu item 11 of menu 1 of menu bar item 2 of menu bar 1
-	end tell
-end if
+	end if 
+end tell
